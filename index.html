@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <h1>MI PRIMER EJEMPLO</h1>
+    <hr>
+    <form action="agregar_persona" method="POST">
+        <input type="text" name="documento" placeholder="Documento">
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="text" name="edad" placeholder="Edad">
+        
+        <button>
+            Ingresar!
+        </button>
+    </form>
+    {% if data!=undefined %}
+    <h2>Documento: {{data.documento}}</h2>
+     <h2>Nombre: {{data.nombre}}</h2>
+      <h2>Edad: {{data.edad}}</h2>
+      {% endif %}
+  </body>
+</html>
